@@ -22,6 +22,9 @@ spec:
           requests:
             cpu: 100m
             memory: 100Mi
+          limits:
+            memory: 200Mi
+            cpu: 200m
         env:
         - name: GET_HOSTS_FROM
           value: dns
@@ -32,3 +35,4 @@ spec:
           # value: env
         ports:
         - containerPort: 80
+

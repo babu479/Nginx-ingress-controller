@@ -22,8 +22,9 @@ spec:
         image: k8s.gcr.io/redis:e2e  # or just image: redis
         resources:
           requests:
-            cpu: 100m
-            memory: 100Mi
+            cpu: "100m"
+          limits:
+            cpu: "200m"
         ports:
         - containerPort: 6379
 
