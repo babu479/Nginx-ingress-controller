@@ -12,6 +12,7 @@ spec:
   template:
     metadata:
       labels:
+        name: frontend-application
         app: guestbook
         tier: frontend
     spec:
