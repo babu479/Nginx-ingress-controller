@@ -4,3 +4,9 @@
 # weave Network plugin
 
 #kubectl create -f https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')
+
+
+ ./test.sh --action deploy-pod-autoscaling  --deployment frontend --namespace production --scaleup 10  --scaledown 9
+ 
+ 
+ cat /var/log/kube-deploy/kube-frontend-2019-07-18.log

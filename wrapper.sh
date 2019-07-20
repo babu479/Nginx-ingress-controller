@@ -161,6 +161,8 @@ echo "Here we are configuring guestbook application in production"
   kubectl get hpa --namespace=production
 
 }
+
+
 if [ "$ACTION" = "prerequisities-install" ];then
 if [ $ARG -ne 2 ]
       then
